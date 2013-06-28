@@ -1,0 +1,16 @@
+Rapport vecka 50-51
+
+- Projektet startat på Github.com
+- Klasser börjar fyllas på. Robin gör Server och ServerConnection klasserna.
+
+- La till bookmarks och så att de sparas i en ArrayList med namnet booklist. 
+Hela ArrayList objektet kan sedan bli seralizerat. 
+//Theo 14/12/2012
+
+Martin N: La till kod i client.java med målsättningen att vi kan ha en client och testa serverkoden.
+
+Tycker att Client Connection borde vara en klass som är gjord för att hantera varje connection från varje klient.
+Den hanterar alla meddelanden som sänds till Servern från klienten, och broadcastar dessa till alla andra klienter.
+Denna klass kör detta på en egen tråd för varje connectad klient, det blir nog enklare att göra på detta sättet än att ha en 
+evig loop som kör igenom alla connectade klieneter, då det tar för mycket av CPUn.
+//Theo 17/12/2012
